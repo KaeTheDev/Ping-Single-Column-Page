@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <link rel="stylesheet" href="scss/main.css">
+
+</head>
+<body>
+
+  <article class="launch-page">
+    <figure class="launch-page__logo">
+      <img class="launch-page-logo" src="images/logo.svg" alt="PING">
+    </figure>
+    <header class="launch-page__header">
+      <h1 class="launch-page__title lf-light-22">We are launching <span class="launch-page__title-bold lf-bold-22">soon!</span></h1>
+      <p class="launch-page__description lf-light-12">Subscribe and get notified</p>
+    </header>
+  
+    <form class="launch-page__form">
+      <div class="launch-page__input-container">
+          <input type="email" class="launch-page__input" placeholder="Your email address...">
+          <div class="launch-page__error-message">Please provide a valid email address</div>
+      </div>
+      <button class="launch-page__button">Notify Me</button>
+  </form>
+  
+    
+    
+    <figure class="launch-page__illustration">
+      <img src="images/illustration-dashboard.png" alt="dashboard">
+    </figure>
+  
+    <footer class="launch-page__footer">
+      <ul class="launch-page__social-links">
+        <li><img src="images/facebook.png" alt="Facebook"></li>
+        <li><img src="images/Twitter.png" alt="Twitter"></li>
+        <li><img src="images/Instagram.png" alt="Instagram"></li>
+      </ul>
+      <p class="lf-light-10 launch-page__copyright">Copyright Ping. All rights reserved.</p>
+    </footer>
+  </article>
+  
+  <script>
+    document.querySelector('.launch-page__button').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  const inputField = document.querySelector('.launch-page__input');
+  const errorMessage = document.querySelector('.launch-page__error-message');
+
+  // Validate email
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!emailRegex.test(inputField.value)) {
+    inputField.classList.add('invalid'); 
+    errorMessage.textContent = 'Please provide a valid email address';
+    errorMessage.style.display = 'block'; 
+  } else {
+    inputField.classList.remove('invalid'); 
+    errorMessage.style.display = 'none'; 
+    // You can add code here to handle valid input (e.g., submit form)
+  }
+});
+  </script>
+
+
+</body>
+</html>

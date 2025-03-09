@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.lf-light-22 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.lf-semibold-12 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.lf-bold-22 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: hsl(208.6, 33.3%, 12.4%);
+}
+
+.lf-light-12 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.lf-light-10 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+body {
+  font-size: 1.25rem;
+}
+
+.launch-page-logo {
+  margin-bottom: 32px;
+}
+
+.launch-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.launch-page__header {
+  text-align: center;
+}
+
+.launch-page__title {
+  margin-bottom: 16px;
+}
+
+.launch-page__description {
+  margin-bottom: 24px;
+}
+
+.launch-page__input {
+  width: 282px;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 28px;
+  font-size: 14px;
+  outline: none;
+}
+
+.launch-page__button {
+  width: 282px;
+  height: 40px;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  border-radius: 28px;
+  color: hsl(0, 0%, 100%);
+}
+
+.launch-page__button:hover {
+  background-color: hsl(223, 100%, 88%);
+  color: white;
+  cursor: pointer;
+}
+
+.launch-page__form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.launch-page__illustration img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.launch-page__illustration {
+  margin-top: 24px;
+  margin-bottom: 120px;
+}
+
+.launch-page__footer {
+  margin-top: 32px;
+}
+
+.launch-page__social-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.launch-page__social-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.launch-page__social-links li img {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+.launch-page__social-links li:hover {
+  background-color: #007BFF;
+}
+
+.launch-page__social-links li:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.launch-page__form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-direction: column;
+}
+
+.launch-page__input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.launch-page__input {
+  width: 282px;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 28px;
+  font-size: 14px;
+  outline: none;
+}
+
+.launch-page__button {
+  width: 282px;
+  height: 40px;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  border-radius: 28px;
+  color: hsl(0, 0%, 100%);
+}
+
+.launch-page__error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 8px;
+  display: none;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .launch-page__form {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .launch-page__input {
+    width: 100%;
+    max-width: none;
+  }
+  .launch-page__button {
+    width: 100%;
+    max-width: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .launch-page__form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .launch-page__input-container {
+    margin-right: 16px;
+  }
+  .launch-page__button {
+    width: 220px;
+  }
+}
+@media (min-width: 1025px) {
+  .launch-page__form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .launch-page__input-container {
+    margin-right: 16px;
+  }
+  .launch-page__button {
+    width: 180px;
+  }
+}/*# sourceMappingURL=main.css.map */

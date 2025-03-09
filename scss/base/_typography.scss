@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.lf-light-22 {
+    @include typography($font-family-primary, 1.375rem, 300); // 22px
+    color: $gray;
+  }
+  
+  .lf-semibold-12 {
+    @include typography($font-family-primary, 0.75rem, 600); // 12px
+  }
+  
+  .lf-bold-22 {
+    @include typography($font-family-primary, 1.375rem, 700); // 22px
+    color: $black;
+  }
+  
+  .lf-light-12 {
+    @include typography($font-family-primary, 0.75rem, 300); // 12px
+  }
+  
+  .lf-light-10 {
+    @include typography($font-family-primary, 0.625rem, 300); // 10px
+    color: $gray;
+  }
+  
